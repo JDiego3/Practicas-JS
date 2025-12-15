@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Forms</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="app.js"></script>
+</head>
+
+<body>
+
+    <header class="fila">
+        <h1>form with nodos</h1>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </header>
+
+    <div class="fila">
+        <nav class="col-3">
+            <ul>
+                <li><a href="https://uv.mx">UV</a></li>
+                <li><a href="https://google.com">Google</a></li>
+                <li><a href="https://wikipedia.com">Wikipedia</a></li>
+            </ul>
+            <img src="soporte.jpg">
+        </nav>
+
+        <main class="col-9">
+            <form id="Formulario" action="Noexiste" method="POST">
+
+                <div class="fila">
+                    <div class="col-2">
+                        <label for="name">Nombre Completo :</label>
+                    </div>
+                    <div class="col-10">
+                        <input type="text" id="name" name="nombre" placeholder="Escribe tu nombre" required>
+                    </div>
+                </div>
+
+
+                <div class="fila">
+                    <div class="col-2">
+                        <label for="Apellido">Appellido completo: </label>
+                    </div>
+                    <div class="col-10">
+                        <input type="text" name="Apellido" id="Apellido" placeholder="Escribe tu Apellido" required>
+                    </div>
+                </div>
+
+                <div class= "fila" id="comentarios-container">
+                    <div class="col-2" data-index="1">
+
+                        <label for="comentario1">Comentario1: </label>
+                    </div>
+                    <div class="col-10">
+                        <input type="text" name="comentario1" id="comentario1" placeholder="Escribe comentario" required>
+                    </div>
+                </div>
+
+                 
+                <input type="hidden" id="numComentarios" name="numComentarios" value="1">
+
+
+                <div class="fila">
+                    <div class="col-6"></div>
+                    <div class="col-3">
+                        <button type="button" id="boton1">Agregar campos</button>
+                    </div>
+                    <div class="col-3"></div>
+                </div>
+
+
+
+
+                <div class="fila">
+                    <div class="col-6"></div>
+                    <div class="col-3">
+                        <button type="button" id="boton2">Eliminar campos</button>
+                    </div>
+                    <div class="col-3"></div>
+                </div> 
+
+            </form>
+        </main>
+    </div>
+
+    <footer>@2025 JD</footer>
+
+</body>
+</html>
